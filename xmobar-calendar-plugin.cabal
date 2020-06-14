@@ -14,9 +14,14 @@ library
   exposed-modules:
     Xmobar.Plugins.Calendar
   hs-source-dirs: src
-  default-extensions: NoImplicitPrelude OverloadedStrings
+  default-extensions: NoImplicitPrelude
   ghc-options: -Wall -Werror -freverse-errors
   default-language:    Haskell2010
-  build-depends:       base >=4.12 && <4.13
+  build-depends:       base >=4.7 && <5
+                     , containers -any
+                     , data-default -any
+                     , iCalendar == 0.4.0.5
+                     , process -any
                      , relude -any
+                     , time -any
                      , xmobar -any
